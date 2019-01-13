@@ -1,0 +1,27 @@
+{
+  "name": "test-pre-commit",
+  "version": "1.0.0",
+  "description": "测试pre-commit",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\"",
+    "precommit-msg": "echo '启动勾子中...' && exit 0"
+  },
+  "pre-commit": [
+    "precommit-msg",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSeaWave/test-pre-commit-position.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSeaWave/test-pre-commit-position/issues"
+  },
+  "homepage": "https://github.com/MrSeaWave/test-pre-commit-position#readme",
+  "devDependencies": {
+    "pre-commit": "^1.2.2"
+  }
+}
